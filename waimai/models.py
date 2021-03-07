@@ -5,7 +5,8 @@ from django.contrib.auth.models import User
 
 
 class yonghuUser(models.Model):
-    nickName = models.CharField(null=True, blank=True, max_length=50)
+    shenfen = models.CharField(null=True, blank=True, max_length=50)
+    useradress = models.CharField(null=True, blank=True, max_length=50)
     belong = models.OneToOneField(
         User, on_delete=models.CASCADE, null=True, blank=True)
 
